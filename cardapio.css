@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita rolagem horizontal */
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a27b5d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* permite quebra de linha se necessário */
+  padding: 10px 20px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 50px;
+  max-width: 150px; /* evita que a logo ocupe espaço demais */
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* permite quebrar em telas pequenas */
+  justify-content: flex-end;
+}
+
+.links a {
+  background-color: #834519;
+  color: #fff1e2;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  background-color: #a55627;
+}
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+.cardapio {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: git #604b3b;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.cardapio h2 {
+  text-align: center;
+  color: #e7ddd5;
+  margin-bottom: 30px;
+}
+
+.categoria {
+  margin-bottom: 30px;
+}
+
+.categoria h3 {
+  color: #e2d3cb;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fffaf8;
+  padding-bottom: 5px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #e4cbbd;
+}
+
+.item p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.item span {
+  font-weight: bold;
+  color: #834519;
+}
+.cardapio .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: #dab998;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.cardapio .item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardapio .item .info {
+  flex: 1;
+}
+
+.cardapio .item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #5c2e13;
+}
+
+.cardapio .item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.cardapio .item span {
+  font-weight: bold;
+  color: #834519;
+  font-size: 15px;
+}
+
+.cardapio .item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.item-cardapio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: #fffaf5;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item-cardapio img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.detalhes {
+  flex: 1;
+}
+
+.detalhes h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #5c2e13;
+}
+
+.detalhes p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.detalhes span {
+  font-weight: bold;
+  color: #834519;
+  font-size: 15px;
+}

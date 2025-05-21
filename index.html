@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores da Terra</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="img/ChatGPT_Image_19_de_mai._de_2025__22_36_05-removebg-preview.png" alt="Logo Sabores da Terra">
+    </div>
+    <nav class="links">
+      <a href="index.html">Início</a> 
+      <a href="cardapio.html">Cardápio</a>
+      <a href="reserva.html">Reserva</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section com imagem de fundo -->
+  <div class="foto"></div>
+
+  <!-- Parágrafo de apresentação -->
+  <section class="container">
+    <br>
+  <br>
+  <br>
+    <p>
+      Fundado em 1986, o Sabores da Terra é um restaurante dedicado a valorizar a rica culinária típica brasileira. 
+      Trabalhamos com ingredientes frescos e temperos autênticos para trazer à mesa pratos que refletem as tradições 
+      e sabores de todas as regiões do país.
+
+      Nosso ambiente acolhedor convida você a experimentar uma verdadeira viagem pelos aromas e gostos do Brasil, 
+      desde o Norte até o Sul. Cada receita é preparada com cuidado e carinho, preservando a alma da comida feita com amor.
+
+      No Sabores da Terra, cada refeição celebra a diversidade e a cultura brasileiras, oferecendo uma experiência 
+      gastronômica única e cheia de história.
+    </p>
+  </section>
+
+  <!-- Galeria de Unidades -->
+  <main class="container">
+    <h2>Nossas unidades</h2>
+    <div class="galeria-fachadas">
+      <figure>
+        <img src="img/fachada 1.jpg" alt="Unidade Itaim Bibi">
+        <figcaption>Itaim Bibi</figcaption>
+      </figure>
+      <figure>
+        <img src="img/fachada 2.jpg" alt="Unidade Tatuapé">
+        <figcaption>Tatuapé</figcaption>
+      </figure>
+      <figure>
+        <img src="img/fachada 3.jpg" alt="Unidade Bresser - Mooca">
+        <figcaption>Bresser - Mooca</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Login -->
+  <section class="login-box">
+    <h2>Login</h2>
+    <form id="formLogin">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit" id="btnEntrar">Entrar</button>
+    </form>
+  </section>
+
+  <!-- Script de login -->
+  <script>
+    document.getElementById("formLogin").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      if (email && senha) {
+        alert("Bem-vindo ao Sabores da Terra, " + email + "!");
+        // window.location.href = "pagina-restrita.html";
+      } else {
+        alert("Por favor, preencha todos os campos.");
+      }
+    });
+  </script>
+
+  <footer class="rodape">
+  <h4>&copy; 2025 Sabores da Terra. Todos os direitos reservados.</h4>
+</footer>
+
+</body>
+</html>

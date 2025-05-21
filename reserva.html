@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores da Terra - Reserva</title>
+  <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/ChatGPT_Image_19_de_mai._de_2025__22_36_05-removebg-preview.png" alt="Logo Sabores da Terra">
+    </div>
+    <nav class="links">
+      <a href="index.html">Início</a> 
+      <a href="cardapio.html">Cardápio</a>
+      <a href="reserva.html">Reserva</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Faça sua Reserva</h1>
+      <form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+        <label for="estado">Unidade:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione uma unidade</option>
+          <option value="bresser">Bresser - Mooca</option>
+          <option value="tatuape">Tatuapé</option>
+          <option value="itaim">Itaim Bibi</option>
+        </select>
+
+        <label for="numero">Número de Lugares:</label>
+        <input type="number" id="numero" name="numero" min="1" max="60" required>
+
+        <label for="data">Data da Reserva:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="appt">Horário:</label>
+        <input type="time" id="appt" name="appt" min="12:00" max="20:00" required>
+        <small>Funcionamento: das 12:00 às 20:00</small>
+
+        <fieldset class="opcoes-grupo">
+          <legend>Restrição alimentar:</legend>
+          <label><input type="radio" name="restricao" value="lactose"> Intolerância à lactose</label>
+          <label><input type="radio" name="restricao" value="gluten"> Intolerância ao glúten</label>
+          <label><input type="radio" name="restricao" value="outro"> Outro</label>
+        </fieldset>
+
+        <label for="restricaoExtra">Outra restrição (opcional):</label>
+        <textarea id="restricaoExtra" name="restricaoExtra" rows="3" placeholder="Descreva aqui..."></textarea>
+
+        <label for="ocasião">Ocasião especial (opcional):</label>
+        <textarea id="ocasião" name="ocasião" rows="3" placeholder="Aniversário, Dia dos Namorados..."></textarea>
+
+        <img src="img/distribuição_mesas-removebg-preview.png" alt="Mapa de Mesas">
+
+        <label for="mesa">Número da mesa:</label>
+        <input type="number" id="mesa" name="mesa" min="1" max="35" required>
+
+        
+
+        <button type="submit">Confirmar Reserva</button>
+      <form>
+
+    </div>
+  </main>
+  
+</body>
+</html>
